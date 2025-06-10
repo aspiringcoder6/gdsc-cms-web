@@ -1,5 +1,6 @@
-import { Request, Response } from "express";
+// @ts-ignore
 import { body, matchedData, validationResult } from "express-validator";
+import { Request, Response } from "express";
 import { auth } from "firebase-admin";
 import { FirebaseError } from "firebase/app";
 import {
