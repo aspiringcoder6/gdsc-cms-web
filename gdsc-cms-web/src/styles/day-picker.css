@@ -1,0 +1,40 @@
+/* day-picker.css */
+.rdp {
+    --rdp-cell-size: 56px; /* Size of the day cells. */
+    --rdp-caption-font-size: 24px; /* Font size for the caption labels. */
+    --rdp-accent-color: #0000ff; /* Accent color for the background of selected days. */
+    --rdp-background-color: #e7edff; /* Background color for the hovered/focused elements. */
+    --rdp-accent-color-dark: #3003e1; /* Accent color for the background of selected days (to use in dark-mode). */
+    --rdp-background-color-dark: #180270; /* Background color for the hovered/focused elements (to use in dark-mode). */
+    --rdp-outline: 2px solid var(--rdp-accent-color); /* Outline border for focused elements */
+    --rdp-outline-selected: 3px solid var(--rdp-accent-color); /* Outline border for focused _and_ selected elements */
+    --rdp-selected-color: #fff; /* Color of selected day text */
+
+    margin: 1em;
+}
+@media (max-width: 	1536px) {
+    .rdp {
+        --rdp-cell-size: 48px; /* Size of the day cells. */
+    }
+}
+
+@media (max-width: 1120px) {
+    .rdp {
+        --rdp-cell-size: 40px; /* Size of the day cells. */
+    }
+}
+
+@media (max-width: 768px) {
+    .rdp {
+        --rdp-caption-font-size: 18px; /* Font size for the caption labels. */
+    }
+}
+
+/* Day selected */
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+    color: var(--rdp-selected-color);
+    opacity: 1;
+    background-color: #1f87fc !important;
+}
