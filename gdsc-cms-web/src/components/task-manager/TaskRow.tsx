@@ -4,7 +4,7 @@ import { formatDateString, isDateBeforeToday } from "utils/date";
 
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import { useAppSelector, useAppDispatch } from "redux/hooks";
+import { useAppSelector } from "redux/hooks";
 
 export default function TaskRow({ data }) {
     const [isOpen, setOpen] = useState(false);
