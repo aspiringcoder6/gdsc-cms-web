@@ -10,11 +10,7 @@ import {
 import { ToastContainer, toast } from "react-toastify";
 
 import { useAppDispatch, useAppSelector } from "redux/hooks";
-import {
-    updateTaskById,
-    fetchTasks,
-    fetchCommentsById,
-} from "redux/slices/taskSlice";
+import { updateTaskById, fetchTasks } from "redux/slices/taskSlice";
 
 import TaskDropdown from "./TaskDropdown";
 import Activity from "./Activity";

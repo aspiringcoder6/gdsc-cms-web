@@ -2,8 +2,9 @@ import ActivityBox from "./subcomponents/ActivityBox";
 import CircularProgress from "./subcomponents/CircularProgress";
 import { Carousel } from "flowbite-react";
 import MyCalendar from "layouts/panel-content/right/Calendar";
-
+import { useState } from "react";
 const Progress = () => {
+    const [selected, setSelected] = useState<Date>(new Date());
     return (
         <div className="text-left w-full">
             <h2 className="text-2xl font-semibold text-center lg:text-left">
@@ -24,7 +25,7 @@ const Progress = () => {
                     <CircularProgress percentage={65} color="#1F87FC" />
                 </div>
                 <div className="xl:hidden">
-                    <MyCalendar />
+                    <MyCalendar setSelected={setSelected} selected={selected} />
                 </div>
                 <ActivityBox />
             </Carousel>

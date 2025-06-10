@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from "redux/hooks";
 import TaskItem from "./subcomponents/TaskItem";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { fetchTasks } from "redux/slices/taskSlice";
 const TodaysTask = () => {
     const dispatch = useAppDispatch();

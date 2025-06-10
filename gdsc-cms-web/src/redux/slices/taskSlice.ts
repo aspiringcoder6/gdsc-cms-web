@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { ITask, ITaskState, IComment } from "model/task";
 import { IUserInfo } from "model/user";
-import { convertDateToSecondsAndNanos } from "utils/date";
 import api from "utils/api";
 
 // omit imports and state
@@ -141,7 +140,7 @@ const taskSlice = createSlice({
             state.comments = action.payload;
         });
         builder.addCase(getAllUsers.fulfilled, (state, action) => {
-            const response = action.payload;
+            // const response = action.payload;
 
             state.users = action.payload;
         });

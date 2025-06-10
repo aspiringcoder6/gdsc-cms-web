@@ -10,7 +10,7 @@ import {
 import { ToastContainer, toast } from "react-toastify";
 
 import { useAppDispatch, useAppSelector } from "redux/hooks";
-import { addTask, fetchTasks, updateTaskById } from "redux/slices/taskSlice";
+import { addTask, fetchTasks } from "redux/slices/taskSlice";
 
 import TaskDropdown from "./TaskDropdown";
 import Activity from "./Activity";
@@ -20,7 +20,7 @@ import { IoClose } from "react-icons/io5";
 import calendar from "assets/task-manager/calendar.svg";
 import description from "assets/task-manager/description.svg";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // import { useEffect } from "react";
 
 export default function CreateTaskModal({ isOpen, setOpen }) {

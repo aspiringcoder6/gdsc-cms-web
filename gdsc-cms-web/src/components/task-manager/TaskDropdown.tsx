@@ -1,5 +1,5 @@
-import { Dropdown, TextInput } from "flowbite-react";
-import { useAppDispatch, useAppSelector } from "redux/hooks";
+import { Dropdown } from "flowbite-react";
+import { useAppSelector } from "redux/hooks";
 
 export default function TaskDropdown({
     children,
@@ -25,16 +25,16 @@ export default function TaskDropdown({
         }
     };
 
-    const removeLabel = (label) => {
-        let tmp = [...data];
-        for (let i = 0; i < data.length; i++) {
-            if (tmp[i] == label) {
-                tmp.splice(i, 1);
-                break;
-            }
-        }
-        setRes(tmp);
-    };
+    // const removeLabel = (label) => {
+    //     let tmp = [...data];
+    //     for (let i = 0; i < data.length; i++) {
+    //         if (tmp[i] == label) {
+    //             tmp.splice(i, 1);
+    //             break;
+    //         }
+    //     }
+    //     setRes(tmp);
+    // };
 
     if (type == "assignee") {
         return (

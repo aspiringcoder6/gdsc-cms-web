@@ -7,7 +7,6 @@ import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { useAppSelector, useAppDispatch } from "redux/hooks";
 
 export default function TaskRow({ data }) {
-    const dispatch = useAppDispatch();
     const [isOpen, setOpen] = useState(false);
 
     const userInfo = useAppSelector((state) => state.user.info);
