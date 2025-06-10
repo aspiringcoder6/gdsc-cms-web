@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
-import expressValidator from "express-validator";
-const { body, matchedData, validationResult } = expressValidator as any;
+import { body, matchedData, validationResult } from "express-validator";
 import { auth } from "firebase-admin";
 import { FirebaseError } from "firebase/app";
 import {
